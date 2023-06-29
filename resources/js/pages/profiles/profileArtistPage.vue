@@ -7,10 +7,11 @@ import addSongModalPage from "@/pages/modals/addSongModalPage.vue";
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
 import {mapActions, mapGetters} from "vuex";
+import {AtomSpinner} from "epic-spinners";
 
 export default defineComponent({
     name: "profileArtistPage",
-    components: { PaginationComponent, CardComponent, addSongModalPage, Splide, SplideSlide, SplideTrack },
+    components: {AtomSpinner, PaginationComponent, CardComponent, addSongModalPage, Splide, SplideSlide, SplideTrack },
     computed: {
         ...mapGetters(['getAuthUser', 'getRejectSongs', 'getArtist'])
     },
@@ -18,6 +19,8 @@ export default defineComponent({
         this.$store.dispatch('getUser')
         this.$store.dispatch('showArtist', 3)
         this.$store.dispatch('getRejectSongs')
+        this.$store.state.activeLoading = true
+        setTimeout(() => { this.$store.state.activeLoading = false }, 1000)
     },
     methods: {
         ...mapActions(['playTrack']),
@@ -27,13 +30,20 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="flex justify-center overflow-hidden gap-x-10 w-full mt-8">
+    <atom-spinner
+        class="absolute left-[40%] top-[35%] phone:left-[10%]"
+        v-if="this.$store.state.activeLoading"
+        :animation-duration="1000"
+        :size="120"
+        :color="'#FF0000'"
+    />
+    <div v-else class="flex justify-center overflow-hidden gap-x-10 w-full mt-8">
 
         <div class="flex flex-col w-[20%] justify-center gap-y-5 mt-[3%]">
             <div class="flex">
                 <img class="rounded-2xl w-[80%] h-[160px]" :src="getAuthUser.image" alt="image">
             </div>
-            <h1 class="text-white capitalize text-4xl">Welcome, {{ getAuthUser.name }}</h1>
+            <h1 class="text-white capitalize text-3xl truncate">Welcome, <br> {{ getAuthUser.name }}</h1>
             <div>
                 <div>
                     <p class="text-gray-500 uppercase text-md break-words">mail: {{ getAuthUser.email }}</p>
@@ -48,8 +58,8 @@ export default defineComponent({
             </button>
         </div>
 
-        <div class="flex flex-col overflow-y-auto w-[70%] gap-y-5 mt-[3%] pr-[2%]">
-            <Splide :has-track="false" class="flex justify-start flex-col" :options="{
+        <div class="flex flex-col overflow-y-auto w-[70%] gap-y-10 mt-[3%] pr-[2%]">
+            <Splide :has-track="false" class="flex justify-start flex-col gap-y-5" :options="{
                 rewind: true,
                 pauseOnHover: true,
                 pagination: false,

@@ -17,6 +17,8 @@
         "@splidejs/splide-extension-grid": "^0.4.1",
         "@splidejs/vue-splide": "^0.6.12",
         "@vitejs/plugin-vue": "^4.0.0",
+        "epic-spinners": "^2.0.0",
+        "i18next": "^23.2.3",
         "jquery": "^3.6.4",
         "vue": "^3.2.36",
         "vue-axios": "^3.5.2",

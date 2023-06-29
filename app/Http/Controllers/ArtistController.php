@@ -90,7 +90,7 @@ class ArtistController extends Controller
         if(!$image) {
             $image = null;
         }
-        $image = url('storage/' . Storage::disk('public')->put('users/avatars', $image));
+        $image = url('/public/storage/' . Storage::disk('public')->put('users/avatars', $image));
         if (!$artist) {
             return response()->json([
                 'status' => 404,
@@ -132,7 +132,7 @@ class ArtistController extends Controller
                 'email' => $artist->email,
                 'role_id' => $artist->role_id,
                 "created_at" => Carbon::parse($artist->created_at)->translatedFormat('j F Y'),
-                'songs' => SongResource::collection($artist->songs),
+                'songs' => SongResource::collection($artist->songs->where('is_application', '!=', 1)->where('agree_application', 1)),
             ]
         ]);
     }

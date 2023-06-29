@@ -15,11 +15,18 @@ class AuthController extends Controller
 {
     public function signUp(SignUpRequest $request):JsonResponse
     {
+        if (!$request['policy']) {
+            return response()->json([
+                "message" => "Подтвердите согласие!",
+            ], 404);
+        }
         $image = $request['image'];
         if(!$image) {
             $image = null;
         }
-        $image = url('storage/' . Storage::disk('public')->put('users/avatars', $image));
+        else {
+            $image = url('/public/storage/' . Storage::disk('public')->put('users/avatars', $image));
+        }
         $user = User::create([
             'name' => $request['name'],
             'is_candidate' => false,

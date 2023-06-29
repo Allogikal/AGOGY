@@ -18,8 +18,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/МИЧЕЛЗ-Угонщица.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/МИЧЕЛЗ-Угонщица.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/МИЧЕЛЗ-Угонщица.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/МИЧЕЛЗ-Угонщица.jpg',
         ]);
         // ID:2
         Song::factory()->create([
@@ -27,8 +27,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/МИЧЕЛЗ-ЛюбимыйЧеловек.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/МИЧЕЛЗ-ЛюбимыйЧеловек.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/МИЧЕЛЗ-ЛюбимыйЧеловек.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/МИЧЕЛЗ-ЛюбимыйЧеловек.jpg',
         ]);
         // ID:3
         Song::factory()->create([
@@ -36,8 +36,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/МИЧЕЛЗ-Недружим.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/МИЧЕЛЗ-Недружим.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/МИЧЕЛЗ-Недружим.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/МИЧЕЛЗ-Недружим.jpg',
         ]);
         // ID:4
         Song::factory()->create([
@@ -45,8 +45,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/МИЧЕЛЗ-Москва-Сочи.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/МИЧЕЛЗ-Недружим.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/МИЧЕЛЗ-Москва-Сочи.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/МИЧЕЛЗ-Недружим.jpg',
         ]);
         // ID:5
         Song::factory()->create([
@@ -54,8 +54,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Zivert-Beverly-Hills.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Zivert-Life.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Zivert-Beverly-Hills.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Zivert-Life.jpg',
         ]);
         // ID:6
         Song::factory()->create([
@@ -63,8 +63,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Zivert-Залипательно.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Zivert-Залипательно.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Zivert-Залипательно.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Zivert-Залипательно.jpg',
         ]);
         // ID:7
         Song::factory()->create([
@@ -72,8 +72,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Zivert-Зелёныеволны.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Zivert-Зеленыеволны.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Zivert-Зелёныеволны.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Zivert-Зеленыеволны.jpg',
         ]);
         // ID:8
         Song::factory()->create([
@@ -81,8 +81,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Zivert-Life.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Zivert-Зеленыеволны.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Zivert-Life.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Zivert-Зеленыеволны.jpg',
         ]);
         // ID:9
         Song::factory()->create([
@@ -90,8 +90,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/DJSMASH-Позвони.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/DJSMASH-Позвони.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/DJSMASH-Позвони.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/DJSMASH-Позвони.jpg',
         ]);
         // ID:10
         Song::factory()->create([
@@ -99,8 +99,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/DJSMASH-CO2.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/DJSMASH-CO2.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/DJSMASH-CO2.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/DJSMASH-CO2.jpg',
         ]);
         // ID:11
         Song::factory()->create([
@@ -108,8 +108,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/DJSMASH-Пятница.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/DJSMASH-Пятница.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/DJSMASH-Пятница.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/DJSMASH-Пятница.jpg',
         ]);
         // ID:12
         Song::factory()->create([
@@ -117,8 +117,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/DJSMASH-Беги.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/DJSMASH-Беги.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/DJSMASH-Беги.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/DJSMASH-Беги.jpg',
         ]);
         // ID:13
         Song::factory()->create([
@@ -126,8 +126,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/WYRGEMI-WOAH.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/WYRGEMI-WOAH.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/WYRGEMI-WOAH.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/WYRGEMI-WOAH.jpg',
         ]);
         // ID:14
         Song::factory()->create([
@@ -135,8 +135,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/WYRGEMI-SNEAKY.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/WYRGEMI-WOAH.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/WYRGEMI-SNEAKY.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/WYRGEMI-WOAH.jpg',
         ]);
         // ID:15
         Song::factory()->create([
@@ -144,8 +144,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/WYRGEMI-Like_it.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/WYRGEMI-Like_it.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/WYRGEMI-Like_it.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/WYRGEMI-Like_it.jpg',
         ]);
         // ID:16
         Song::factory()->create([
@@ -153,8 +153,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/WYRGEMI-ЯR.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/WYRGEMI-ЯR.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/WYRGEMI-ЯR.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/WYRGEMI-ЯR.jpg',
         ]);
         // ID:17
         Song::factory()->create([
@@ -162,8 +162,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Maga-WAKANDA.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Maga-WAKANDA.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Maga-WAKANDA.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Maga-WAKANDA.jpg',
         ]);
         // ID:18
         Song::factory()->create([
@@ -171,8 +171,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Maga-THOR.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Maga-THOR.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Maga-THOR.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Maga-THOR.jpg',
         ]);
         // ID:19
         Song::factory()->create([
@@ -180,8 +180,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Maga-BATMAN.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Maga-BATMAN.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Maga-BATMAN.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Maga-BATMAN.jpg',
         ]);
         // ID:20
         Song::factory()->create([
@@ -189,8 +189,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Maga-Notorious.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Maga-Notorious.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Maga-Notorious.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Maga-Notorious.jpg',
         ]);
         // ID:21
         Song::factory()->create([
@@ -198,8 +198,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Junona_Boys-Relax.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Junona_Boys-Relax.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Junona_Boys-Relax.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Junona_Boys-Relax.jpg',
         ]);
         // ID:22
         Song::factory()->create([
@@ -207,8 +207,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Junona_Boys-Dont_Be.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Junona_Boys-Dont_Be.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Junona_Boys-Dont_Be.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Junona_Boys-Dont_Be.jpg',
         ]);
         // ID:23
         Song::factory()->create([
@@ -216,8 +216,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Junona_Boys-Faded.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Junona_Boys-Faded.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Junona_Boys-Faded.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Junona_Boys-Faded.jpg',
         ]);
         // ID:24
         Song::factory()->create([
@@ -225,8 +225,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Weeknd-Blinding_Lights.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Weeknd-Starboy.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Weeknd-Blinding_Lights.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Weeknd-Starboy.jpg',
         ]);
         // ID:25
         Song::factory()->create([
@@ -234,8 +234,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Weeknd-Save_Your_Tears.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Weeknd-Starboy.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Weeknd-Save_Your_Tears.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Weeknd-Starboy.jpg',
         ]);
         // ID:26
         Song::factory()->create([
@@ -243,8 +243,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Weeknd-Starboy.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Weeknd-Starboy.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Weeknd-Starboy.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Weeknd-Starboy.jpg',
         ]);
         // ID:27
         Song::factory()->create([
@@ -252,8 +252,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Weeknd-The_Hills.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Weeknd-Starboy.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Weeknd-The_Hills.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Weeknd-Starboy.jpg',
         ]);
         // ID:28
         Song::factory()->create([
@@ -261,8 +261,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Король_и_Шут-Кукла_колдуна.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Король_и_Шут-Кукла_колдуна.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Король_и_Шут-Кукла_колдуна.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Король_и_Шут-Кукла_колдуна.jpg',
         ]);
         // ID:29
         Song::factory()->create([
@@ -270,8 +270,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Король_и_Шут-Лесник.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Король_и_Шут-Лесник.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Король_и_Шут-Лесник.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Король_и_Шут-Лесник.jpg',
         ]);
         // ID:30
         Song::factory()->create([
@@ -279,8 +279,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Король_и_Шут-Ром.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Король_и_Шут-Ром.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Король_и_Шут-Ром.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Король_и_Шут-Ром.jpg',
         ]);
         // ID:31
         Song::factory()->create([
@@ -288,8 +288,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Король_и_Шут-Джокер.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Король_и_Шут-Ром.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Король_и_Шут-Джокер.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Король_и_Шут-Ром.jpg',
         ]);
         // ID:32
         Song::factory()->create([
@@ -297,8 +297,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Wicked_Game.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Wicked_Game.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Wicked_Game.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Wicked_Game.jpg',
         ]);
         // ID:33
         Song::factory()->create([
@@ -306,8 +306,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Falling_in_Love.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Falling_in_Love.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Falling_in_Love.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Falling_in_Love.jpg',
         ]);
         // ID:34
         Song::factory()->create([
@@ -315,8 +315,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Life_Will_Go.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Life_Will_Go.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:35
         Song::factory()->create([
@@ -324,8 +324,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Always_Got_Tonight.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Always_Got_Tonight.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:36
         Song::factory()->create([
@@ -333,8 +333,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => true,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:37
         Song::factory()->create([
@@ -342,8 +342,8 @@ class SongSeeder extends Seeder
             'is_application' => true,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:38
         Song::factory()->create([
@@ -351,8 +351,8 @@ class SongSeeder extends Seeder
             'is_application' => true,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:39
         Song::factory()->create([
@@ -360,8 +360,8 @@ class SongSeeder extends Seeder
             'is_application' => true,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:40
         Song::factory()->create([
@@ -369,8 +369,8 @@ class SongSeeder extends Seeder
             'is_application' => true,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:41
         Song::factory()->create([
@@ -378,8 +378,8 @@ class SongSeeder extends Seeder
             'is_application' => true,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:42
         Song::factory()->create([
@@ -387,8 +387,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:43
         Song::factory()->create([
@@ -396,8 +396,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:44
         Song::factory()->create([
@@ -405,8 +405,8 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
         ]);
         // ID:45
         Song::factory()->create([
@@ -414,8 +414,44 @@ class SongSeeder extends Seeder
             'is_application' => false,
             'agree_application' => false,
             'popularity' => rand(0, 100),
-            'song_url' => 'http://127.0.0.1:8000/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
-            'image' => 'http://127.0.0.1:8000/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+            'song_url' => 'http://agogy.site/public/storage/songs/source/Chris_Isaak-Nothing_To_Say.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/Chris_Isaak-Life_Will_Go.jpg',
+        ]);
+        // ID:46
+        Song::factory()->create([
+            'title' => 'Снег в океане',
+            'is_application' => false,
+            'agree_application' => true,
+            'popularity' => rand(0, 100),
+            'song_url' => 'http://agogy.site/public/storage/songs/source/ЛАЗАРЕВ-Снег_в_океане.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/ЛАЗАРЕВ-Снег_в_океане.jpg',
+        ]);
+        // ID:47
+        Song::factory()->create([
+            'title' => 'Сдавайся',
+            'is_application' => false,
+            'agree_application' => true,
+            'popularity' => rand(0, 100),
+            'song_url' => 'http://agogy.site/public/storage/songs/source/ЛАЗАРЕВ-Сдавайся.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/ЛАЗАРЕВ-Сдавайся.jpg',
+        ]);
+        // ID:48
+        Song::factory()->create([
+            'title' => 'Я не боюсь',
+            'is_application' => false,
+            'agree_application' => true,
+            'popularity' => rand(0, 100),
+            'song_url' => 'http://agogy.site/public/storage/songs/source/ЛАЗАРЕВ-Я_не_боюсь.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/ЛАЗАРЕВ-Я_не_боюсь.jpg',
+        ]);
+        // ID:49
+        Song::factory()->create([
+            'title' => '7 цифр',
+            'is_application' => false,
+            'agree_application' => true,
+            'popularity' => rand(0, 100),
+            'song_url' => 'http://agogy.site/public/storage/songs/source/ЛАЗАРЕВ-7_цифр.mp3',
+            'image' => 'http://agogy.site/public/storage/songs/avatars/ЛАЗАРЕВ-7_цифр.jpg',
         ]);
     }
 }

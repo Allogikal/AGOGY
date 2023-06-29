@@ -20,42 +20,42 @@ class GenreSeeder extends Seeder
         Genre::factory()->create([
             'title' => 'Поп-музыка',
             'popularity' => rand(0, 100),
-            'image' => 'http://127.0.0.1:8000/storage/genres/POP.png'
+            'image' => 'http://agogy.site/public/storage/genres/POP.png'
         ]);
 
         // GENRE!!! ID:2
         Genre::factory()->create([
             'title' => 'Электроника',
             'popularity' => rand(0, 100),
-            'image' => 'http://127.0.0.1:8000/storage/genres/ELECTRO.png'
+            'image' => 'http://agogy.site/public/storage/genres/ELECTRO.png'
         ]);
 
         // GENRE!!! ID:3
         Genre::factory()->create([
             'title' => 'Танцевальная',
             'popularity' => rand(0, 100),
-            'image' => 'http://127.0.0.1:8000/storage/genres/DANCE.png'
+            'image' => 'http://agogy.site/public/storage/genres/DANCE.png'
         ]);
 
         // GENRE!!! ID:4
         Genre::factory()->create([
             'title' => 'Хип-хоп',
             'popularity' => rand(0, 100),
-            'image' => 'http://127.0.0.1:8000/storage/genres/HIP-HOP.png'
+            'image' => 'http://agogy.site/public/storage/genres/HIP-HOP.png'
         ]);
 
         // GENRE!!! ID:5
         Genre::factory()->create([
             'title' => 'Русский рок',
             'popularity' => rand(0, 100),
-            'image' => 'http://127.0.0.1:8000/storage/genres/ROCK.png'
+            'image' => 'http://agogy.site/public/storage/genres/ROCK.png'
         ]);
 
         // GENRE!!! ID:6
         Genre::factory()->create([
             'title' => 'Легкая музыка',
             'popularity' => rand(0, 100),
-            'image' => 'http://127.0.0.1:8000/storage/genres/LIGHT.png'
+            'image' => 'http://agogy.site/public/storage/genres/LIGHT.png'
         ]);
 
     }

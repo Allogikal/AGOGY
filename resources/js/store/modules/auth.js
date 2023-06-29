@@ -17,7 +17,8 @@ const state = {
         password: '',
         password_confirmation: '',
         image: null,
-        description: ''
+        description: '',
+        policy: false
     },
     nextPageOnRegisterModal: true,
     authToken: localStorage.getItem('auth_token'),
@@ -84,7 +85,8 @@ const actions = {
             password: state.registerUserData.password,
             password_confirmation: state.registerUserData.password_confirmation,
             image: state.registerUserData.image,
-            description: state.registerUserData.description
+            description: state.registerUserData.description,
+            policy: state.registerUserData.policy
         }, {
             headers: {
                 "Content-Type": 'multipart/form-data'
@@ -135,6 +137,7 @@ const actions = {
             }
         }).then(response => {
             NC.spawnNote('success', response.data.message, 'Выполнено действие...', ['Закрыть'])
+            context.dispatch('getUser')
         }).catch(error => {
             console.log(error)
         })

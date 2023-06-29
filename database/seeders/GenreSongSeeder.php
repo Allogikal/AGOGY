@@ -52,6 +52,26 @@ class GenreSongSeeder extends Seeder
             'genre_id' => 1,
             'song_id' => 8,
         ]);
+
+        GenreSong::factory()->create([
+            'genre_id' => 1,
+            'song_id' => 46,
+        ]);
+
+        GenreSong::factory()->create([
+            'genre_id' => 1,
+            'song_id' => 47,
+        ]);
+
+        GenreSong::factory()->create([
+            'genre_id' => 1,
+            'song_id' => 48,
+        ]);
+
+        GenreSong::factory()->create([
+            'genre_id' => 1,
+            'song_id' => 49,
+        ]);
         // ID:3
         GenreSong::factory()->create([
             'genre_id' => 1,

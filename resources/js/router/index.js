@@ -9,11 +9,13 @@ import profileArtistPage from "@/pages/profiles/profileArtistPage.vue";
 import searchPage from "@/pages/searchPage.vue";
 import songsArtistPage from "@/pages/songsArtistPage.vue";
 import notFoundPage from "@/pages/notFoundPage.vue";
+import policyPage from "@/pages/policyPage.vue";
 
 const routes = [
     { path: '/home', component: homePage, alias: '/' },
     { path: '/artists/:id', component: songsArtistPage },
     { path: '/search', component: searchPage },
+    { path: '/policy', component: policyPage },
     /**         GUARDED        **/
     { path: '/favourites', component: favouritesPage, meta: { requiresAuth: true } },
     /**         PROFILES        **/

@@ -7,10 +7,11 @@ import artistCardComponent from "@/components/artistCardComponent.vue";
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
 import {mapActions, mapGetters} from "vuex";
+import {AtomSpinner} from "epic-spinners";
 
 export default defineComponent({
     name: "profileAdminPage",
-    components: { PaginationComponent, CardComponent, artistCardComponent, Splide, SplideSlide, SplideTrack },
+    components: {AtomSpinner, PaginationComponent, CardComponent, artistCardComponent, Splide, SplideSlide, SplideTrack },
     computed: {
         ...mapGetters(['getAuthUser', 'getApplicationsArtists', 'getApplicationsSongs']),
         getImageUrl() {
@@ -22,9 +23,15 @@ export default defineComponent({
         this.$store.dispatch('getUser')
         this.$store.dispatch('getApplicationsArtists')
         this.$store.dispatch('getApplicationsSongs')
+        this.$store.state.activeLoading = true
+        setTimeout(() => { this.$store.state.activeLoading = false }, 1000)
     },
     methods: {
-        ...mapActions(['setEditAuthUser', 'playTrack']),
+        ...mapActions(['playTrack']),
+        setEditAuthUser() {
+            this.$store.dispatch('setEditAuthUser')
+            this.$store.state.showEditForm = false;
+        },
         setConfirmArtist(payload) { this.$store.dispatch('setConfirmArtist', payload) },
         setRejectArtist(payload) { this.$store.dispatch('setRejectArtist', payload) },
         playSelectedTrack(track) { this.playTrack(track); },
@@ -33,21 +40,28 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="flex justify-center overflow-hidden gap-x-20 w-[90%] pr-32">
+    <atom-spinner
+        class="absolute left-[40%] top-[35%] phone:left-[10%]"
+        v-if="this.$store.state.activeLoading"
+        :animation-duration="1000"
+        :size="120"
+        :color="'#FF0000'"
+    />
+    <div v-else class="flex justify-center overflow-hidden w-[90%] pr-32">
 
-        <form @submit.prevent="setEditAuthUser" class="flex flex-col justify-center items-center gap-y-5 mt-[5%]">
-            <div v-if="!this.$store.state.showEditForm" class="flex justify-center">
-                <img class="rounded-2xl" :class="!this.$store.state.showEditForm ? 'w-[40%]' : 'w-[80%]'" :src="getAuthUser.image" alt="image">
+        <form @submit.prevent="setEditAuthUser" class="flex flex-col justify-center items-center gap-y-5 mt-[5%] w-[40%]">
+            <div v-if="!this.$store.state.showEditForm" class="flex justify-center w-[200px] h-[190px]">
+                <img class="rounded-2xl w-full" :src="getAuthUser.image" alt="image">
             </div>
-            <div v-else class="flex flex-col items-center justify-center border-2 w-[80%] h-[25vh] gap-y-2 cursor-pointer">
-                <input class="cursor-pointer w-[15%] absolute z-20 opacity-0" type="file" ref="avatar_user" @change="this.$store.state.auth.me.image = this.$refs.avatar_user.files[0]">
+            <div v-else class="flex flex-col items-center justify-center border-2 gap-y-2 cursor-pointer w-[200px] h-[190px]">
+                <input class="cursor-pointer absolute z-20 opacity-0" type="file" ref="avatar_user" @change="this.$store.state.auth.me.image = this.$refs.avatar_user.files[0]">
                 <div v-show="!this.$refs.avatar_user" class="relative">
                     <img src="../../../images/icon_upload.svg" alt="upload">
                 </div>
                 <p v-show="!this.$refs.avatar_user" class="text-white break-words w-1/2 text-center font-['Gilroy']">DROP YOUR IMAGE</p>
-                <img v-show="this.$refs.avatar_user" :src="this.getImageUrl" class="object-cover w-[100%] h-[100%]" alt="check">
+                <img v-show="this.$refs.avatar_user" :src="this.getImageUrl" class="object-cover w-full h-full" alt="check">
             </div>
-            <h1 class="text-white capitalize text-4xl flex">Hello, {{ !this.$store.state.showEditForm ? getAuthUser.name : 'USER' }}</h1>
+            <h1 class="text-white capitalize text-4xl text-center w-[60%] truncate">Hello, {{ !this.$store.state.showEditForm ? getAuthUser.name : 'USER' }}</h1>
             <div>
                 <div>
                     <p @click.prevent="this.$store.state.showEditForm = true" v-if="!this.$store.state.showEditForm" class="text-gray-500 uppercase text-lg break-words">mail: {{ getAuthUser.email }}</p>
@@ -68,7 +82,7 @@ export default defineComponent({
             </button>
         </form>
 
-        <div class="flex flex-col overflow-y-auto gap-y-5 mt-[3%] pr-[2%]">
+        <div class="flex flex-col overflow-y-auto gap-y-5 mt-[3%] pr-[2%] w-[60%]">
             <Splide :has-track="false" class="flex justify-start flex-col" :options="{
                 rewind: true,
                 pauseOnHover: true,

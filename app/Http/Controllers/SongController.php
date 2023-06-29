@@ -81,8 +81,8 @@ class SongController extends Controller
                     'message' => 'Ошибка загрузки картинки!'
                 ], 400);
             }
-            $song_image = url(Storage::disk('public')->put('songs/avatars', $song_image));
-            $song_file = url(Storage::disk('public')->put('songs/source', $song_file));
+            $song_image = url('/public/storage/' . Storage::disk('public')->put('songs/avatars', $song_image));
+            $song_file = url('/public/storage/' . Storage::disk('public')->put('songs/source', $song_file));
             $song_created = Song::create([
                 'title' => $request['title'],
                 'is_application' => true,
@@ -192,6 +192,7 @@ class SongController extends Controller
             $checkSong->delete();
             return response()->json([
                 'status' => 200,
+                'method' => 'delete',
                 'message' => "$song->title, удалено из понравившихся!"
             ]);
         }

@@ -10,6 +10,25 @@ const store = createStore({
         upHere: false,
         showEditForm: false,
         showAddSongModal: false,
+        darkMode: false,
+        showBurgerMenu: false,
+        activeLoading: true
+    },
+    mutations: {
+      changeMode: (state, payload) => {
+          state.darkMode = payload
+      }
+    },
+    actions: {
+        changeMode: async (context) => {
+            if (!context.state.darkMode) {
+                context.commit('changeMode', true)
+                document.querySelector("html").classList.add('dark')
+                return true
+            }
+            document.querySelector("html").classList.remove('dark')
+            context.commit('changeMode', false)
+        },
     },
     modules: { songs, artists, genres, auth, player }
 })

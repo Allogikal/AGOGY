@@ -139,6 +139,7 @@ const actions = {
                 "Authorization": 'Bearer ' + localStorage.getItem('auth_token')
             }
         }).then(response => {
+            response.data.method === 'delete' ? context.commit('setFavouriteStatus', false) : context.commit('setFavouriteStatus', true)
             NC.spawnNote('success', response.data.message, 'Выполнено действие...', ['Закрыть'])
         }).catch(error => {
             NC.spawnNote('error', error.response.data.error, 'Что-то пошло не так...', ['Закрыть'])

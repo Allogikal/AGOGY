@@ -218,5 +218,25 @@ class UserSongSeeder extends Seeder
             'user_id' => 3,
             'song_id' => 41,
         ]);
+        // ID:11
+        UserSong::factory()->create([
+            'user_id' => 15,
+            'song_id' => 46,
+        ]);
+
+        UserSong::factory()->create([
+            'user_id' => 15,
+            'song_id' => 47,
+        ]);
+
+        UserSong::factory()->create([
+            'user_id' => 15,
+            'song_id' => 48,
+        ]);
+
+        UserSong::factory()->create([
+            'user_id' => 15,
+            'song_id' => 49,
+        ]);
     }
 }

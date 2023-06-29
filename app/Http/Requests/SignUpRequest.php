@@ -23,12 +23,13 @@ class SignUpRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|string|max:255',
+            'name' => 'required|string|max:30',
             'description' => 'required|string|max:300',
             'image' => 'required|file|mimes:jpg,bmp,png,svg',
-            'email' => 'required|string|max:255|email|unique:users',
-            'password' => 'required|string|min:8|confirmed',
-            'role_id' => 'integer'
+            'email' => 'required|string|max:40|email|unique:users',
+            'password' => 'required|string|min:8|max:30|confirmed',
+            'role_id' => 'integer',
+            'policy' => 'required'
         ];
     }
 }

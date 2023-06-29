@@ -24,9 +24,8 @@
 }
 .notification__box {
     animation: flyIn 0.3s ease-out;
-    background-color: hsl(0, 0%, 100%);
+    background-color: white;
     border-radius: 0.75em;
-    box-shadow: 0 0.5em 1em hsla(var(--hue), 10%, 10%, 0.1);
     height: 4em;
     transition: background-color var(--transDur),
     color var(--transDur);
@@ -60,7 +59,7 @@
     opacity: 0.75;
 }
 .notification__btns {
-    box-shadow: -1px 0 0 hsla(var(--hue),10%,10%,0.15);
+    box-shadow: -1px 0 0 white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -71,7 +70,7 @@
 }
 .notification__btn {
     background-color: transparent;
-    box-shadow: 0 0 0 hsla(var(--hue),10%,10%,0.5) inset;
+    box-shadow: 0 0 0 white inset;
     font-size: 0.7em;
     line-height: 1;
     font-weight: 500;
@@ -97,12 +96,12 @@
     border-radius: 0 0.75rem 0.75rem 0;
 }
 .notification__btn + .notification__btn {
-    box-shadow: 0 -1px 0 hsla(var(--hue),10%,10%,0.15);
+    box-shadow: 0 -1px 0 white;
     font-weight: 400;
 }
 .notification__btn:active,
 .notification__btn:focus {
-    background-color: hsl(var(--hue),10%,95%);
+    background-color: white;
 }
 .notification__btn:focus {
     outline: transparent;
@@ -114,18 +113,18 @@
     }
     .notification__btn:focus-visible,
     .notification__btn:active {
-        background-color: hsl(var(--hue),10%,95%);
+        background-color: white;
     }
 }
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: hsl(var(--hue),10%,10%);
-        --fg: hsl(var(--hue),10%,90%);
+        --bg: white;
+        --fg: white;
     }
     .notification__box {
-        background-color: hsl(var(--hue),10%,30%);
+        background-color: transparent;
     }
     .notification__btns {
         box-shadow: -1px 0 0 hsla(var(--hue),10%,90%,0.15);
